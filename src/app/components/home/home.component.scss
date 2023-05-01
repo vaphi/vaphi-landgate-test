@@ -1,5 +1,36 @@
-section{
+section {
     background-image: url("/assets/images/hero-bg.jpg");
-    width:auto;
-    height: 300px;
+    width: auto;
+    flex: 1;
+}
+
+.section-title-container {
+    word-wrap: break-word;
+    width: inherit;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .section-title-container {
+        margin: auto;
+    }
+}
+
+.section-title {
+    color: white;
+    text-align: center;
+}
+
+.section-details {
+    color: white;
+    margin: auto 20%;
+    word-break: break-word;
+    font-family: monospace;
+}
+
+.section-details {
+    color: white;
 }

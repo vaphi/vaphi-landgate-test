@@ -1,4 +1,26 @@
-<p>People Component</p>
-TODO: Show all people on this screen
-  TODO Implement a person-component that displays the details of a person.
-Add a way to select and then edit a individual person.  There should be options to save and cancel the edit.  Cancelling an edit will result in no changes being made to the selected person.
+<!-- TODO: Show all people on this screen TODO Implement a person-component that
+displays the details of a person. Add a way to select and then edit a individual
+person. There should be options to save and cancel the edit. Cancelling an edit
+will result in no changes being made to the selected person. -->
+
+<div class="people-container">
+  <div
+    *ngFor="let people of peoples$ | async; let i = index"
+    class="card"
+    style="width: 18rem"
+  >
+    <div class="card-body">
+      <h5 class="card-title">{{ people.firstName }} {{ people.lastName }}</h5>
+      <p>Age: {{ people.age }}</p>
+      <p>Job Title: {{ people.jobTitle }}</p>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="openDialog(people, i)"
+      >
+        Edit
+      </button>
+    </div>
+  </div>
+</div>

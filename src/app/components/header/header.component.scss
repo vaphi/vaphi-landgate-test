@@ -1,0 +1,25 @@
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: black !important;
+}
+
+.navbar {
+    background-color: #667b68;
+}
+
+li:hover {
+    .nav-link {
+        color: black !important;
+    }
+}
+
+.navbar-toggler-icon {
+    color: white;
+}

@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Edit Person</h1>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="personForm">
+    <div>
+      <label>First Name</label>
+      <input class="form-control" type="text" formControlName="firstName" />
+    </div>
+    <div>
+      <label>Last Name</label>
+      <input class="form-control" type="text" formControlName="lastName" />
+    </div>
+    <div>
+      <label>Age</label>
+      <input class="form-control" type="text" formControlName="age" />
+    </div>
+    <div>
+      <label>Job Title</label>
+      <input class="form-control" type="text" formControlName="jobTitle" />
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions class="modal-footer" align="end">
+  <div>
+    <button mat-button mat-dialog-close>Cancel</button>
+  </div>
+  <div>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="updatePerson()">
+      Edit Person
+    </button>
+  </div>
+</mat-dialog-actions>

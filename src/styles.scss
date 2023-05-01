@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+app-home {
+    display: flex;
+    flex: 1;
+}
+
+app-people-component {
+    flex: 1;
+}
